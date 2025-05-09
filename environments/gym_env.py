@@ -89,8 +89,13 @@ class GymEnv:
 
 if __name__ == "__main__":
     # 환경 3개 중 하나 선택 가능
-    env_names = ["CartPole-v1", "MountainCar-v0", "LunarLander-v2"]
-    env = GymEnv(env_name=env_names[2], render_mode="human")
+    env_names = [
+        "CartPole-v1",
+        "MountainCar-v0",
+        "LunarLander-v2",
+        "Taxi-v3",
+    ]
+    env = GymEnv(env_name=env_names[3], render_mode="human")
 
     print(env.info())
 
